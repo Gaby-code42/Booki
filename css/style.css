@@ -18,33 +18,130 @@ body {
     justify-content: center;
 }
 
-header {
-    display: flex;
-    justify-content:space-between;
-}
-/* demande si c'est le plus lisible */
-.nav-top ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-top ul li {
-    display:inline;
-    
-}
-.nav-top ul li a:focus,
-.nav-top ul li a:hover{
-    color:#0065FC;
-    border-top: 2px blue solid;
-}
-
 .main-container {
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    }
+
+header .logo img{
+    width: 69px;
+    height: 19px;
+    padding-top: 10px;
+    
+}
+.nav-top ul {
+    margin: 0;
+}
+
+.header-title{
+    position: relative;
+    display: inline;
+    list-style: none;
+    font-size: 16px;
+    margin-left: 64px;
+        }
+/* élément de décoration , barre supérieur au texte */
+.header-title::before{
+    content:'';
+    position:absolute;
+    top: -8px; /* Ajuster la valeur selon la hauteur de la bordure */
+    left: 0;
+    right: 0;
+    height: 0px;
+    border-top: 2px solid transparent;
+    }
+/* couleur de la barre*/
+    .header-title:hover:before {
+    border-color:#0065FC;
+}
+
+/*peut etre une meilleur solution*/
+.text{
+    margin-top: -20px;
+}
+/*recherche*/
+.search-bar {
+    display: flex;
+    align-items: center; 
+}
+
+.fa-location-dot {
+    background-color:#F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    width: 49px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-input {
+    border-left: none;
+    border-right:none;
+    height: 49px;
+    width: 195px;
+    outline: none;
+    border-color: #F2F2F2;
+}
+
+.search-sumit {
+    background-color:#0065FC;
+    border-radius: 0px 15px 15px 0px;
+    width: 132px;
+    height: 49px;
+    }
+
+input[type="submit"] { 
+    background-color:#0065FC;
+    border-radius: 0px 15px 15px 0px;
+    width: 132px;
+    height: 49px;
+    border-color: #0065FC;
+}
+
+/* voir comment enlever ces textures*/
+
+.nav-interest ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.nav-interest ul li{
+    display:flex;
+    display:inline-block;
+}
+
+.nav-filter-title {
+    font-size: 18px;
+    margin: 10px;
+}
+.nav-filter {
+    border: #D9D9D9 2px solid;
+    border-radius: 25px 25px 25px 25px;
+    Padding: 4px 19px 4px 19px;
+    margin:5px;
+    height: 50px;
+    font-size: 17px;    
+}
+
+.nav-filter i {
+    width: 22px;
+    height: 22px;
+}
+
+
+
+.nav-interest ul li p {
+    display: inline-block;
+ }
+
 
 a {
     color: inherit;
@@ -95,6 +192,23 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+}
+
+.hebergements-cards {
+    display:flex;
+    flex-wrap: wrap;
+    gap: 16px;   
+}
+
+.hebergements-cards a {
+    width:30%;
+}
+
+.hebergements-cards img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 /****** Populaires ***********/
