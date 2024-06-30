@@ -18,13 +18,13 @@
     <div class="main-container">
         <header>
             <div class="logo"><img src="images/logo/Booki.png" alt="logo Booki"/></div>
-            <nav class="nav-top">
-                <ul>
-                    <li class="header-title"><a href="hebergements-and-populaires">Hébergements</a></li>
-                    <li class="header-title"><a href="Activity">Activités</a></li>
-                    <!--dont forgot to link anchor and id-->
-                </ul>
-            </nav>
+                <nav class="nav-top">
+                    <ul>
+                        <li class="header-title hebergements"><a href="hebergements-and-populaires">Hébergements</a></li>
+                        <li class="header-title activites"><a href="Activity">Activités</a></li>
+                        <!--dont forgot to link anchor and id-->
+                    </ul>
+                </nav>
         </header> 
 
         <!-- header finish , waiting for Css -->      
@@ -38,23 +38,22 @@
                     <p class="text">en plein centre-ville ou en pleine nature</p>
                 </div>
             </div>
-
                 <div class="container-form">
                     <form method="get" action="">
-                        <div class=search-bar>
+                        <div class=search-bar> 
                         <i class="fa-solid fa-location-dot" style="color: black;"></i>
-                        <input type="search" name="Marseille" id="site-search" placeholder="Marseille, France" class="search-input">
+                        <input type="search" name="Ville" id="site-search" placeholder="Marseille, France" class="search-input">
                         <input type="submit" value="Rechercher" class="search-submit">
+                                <button class="button-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
                         </div>
                     </form>
                 </div>
-
                 <div>                    
                     <nav class="nav-interest">
-                        <ul>
-                            <li class="nav-filter-title">
-                                <p><b>Filtres</b></p>
-                            </li>
+                        <p><b>Filtres</b></p>                       
+                        <ul class="nav-group">
                             <li class="nav-filter">
                                 <i class="fa-solid fa-money-bill-wave fa-icon"></i>
                                 <p><strong>Économies</strong></p>
@@ -74,8 +73,9 @@
                         </ul>
                     </nav>
                 </div>
-                <div>
+                <div class="info">
                     <i class="fa-solid fa-info"></i>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
 
             <div class="hebergements-and-populaires">
@@ -200,8 +200,13 @@
                         </article>
                         </a>            
                     </div>
+                    <div>
+                        <a href="#">
+                        <h4>Afficher plus</h4>
+                    </a>
+                    </div>
                 </section>
-                <section class="populaires">
+                           <section class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
@@ -267,8 +272,68 @@
                     </div>
                 </section>
             </div>
+            <div class="activity">
+                    <div class="activity-title">
+                        <h2>Activités à Marseille</h2>
+                    </div>
+                <div class="activity-cards">
+                    
+                    <article class="a-card">
+                            <a href="#">
+                                <img src="./images/activites/reno-laithienne.jpg" alt="vieux-port">
+                                <div class="a-card-content">
+                                    <h3 class="card-title">Vieux-port</h3>
+                                </div>
+                            </a>
+                    </article>                    
+                    <article class="a-card">
+                            <a href="#">
+                                <img src="./images/activites/paul-hermann.jpg" alt="vieux-port">
+                                <div class="a-card-content">
+                                    <h3 class="card-title">Fort de Pomègues</h3>
+                                </div>
+                            </a>
+                    </article>                    
+                    <article class="a-card">
+                            <a href="#">
+                                <img src="./images/activites/kilyan-sockalingum.jpg" alt="vieux-port">
+                                <div class="a-card-content">
+                                    <h3 class="card-title">Parc national des Calanques</h3>
+                                </div>
+                            </a>
+                    </article>
+                    <article class="a-card">
+                            <a href="#">
+                                <img src="./images/activites/florian-wehde.jpg" alt="vieux-port">
+                                <div class="a-card-content">
+                                    <h3 class="card-title">Notre-Dame-De-La-Garde</h3>
+                                </div>
+                            </a>
+                    </article>
+                    </a>
+                </div>           
+            </div>
         </main>
-        <footer></footer>
+        <footer>
+            <nav class="test">
+                    <ul class="about">
+                        <h3>À propos</h3>
+                        <p>Fonctionnement du site</p>
+                        <p>Conditions générales</p>
+                        <p>Données et confidentialité</p>
+                    </ul>
+                    <ul class="footer-hebergement">
+                        <h3>Nos hébergements</h3>
+                        <p>Charte de qualité</p>
+                        <p>Proposer votre hôtel</p>
+                    </ul>
+                    <ul class="help">
+                        <h3>Assistance</h3>
+                        <p>Centre d'aide</p>
+                        <p>Nous contacter</p>
+                    </ul>
+            </nav>
+        </footer>
     </div>
 </body>
 
