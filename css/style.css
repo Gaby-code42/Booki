@@ -356,9 +356,12 @@ a {
 /* Activité */
 
 .activity {
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     padding: 30px;
     width: 100%;
+    gap: 30px;
 }
 
 .activity .card-title {
@@ -427,6 +430,7 @@ footer {
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
+        gap:50px;
     }
 
     .hebergements {
@@ -455,6 +459,9 @@ footer {
         font-size: 13px;
     }
     
+    .activity-cards img {
+        height: 200px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
