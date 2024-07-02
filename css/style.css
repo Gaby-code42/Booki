@@ -13,13 +13,18 @@
     color: var(--main-color);
 }
 
-h1 h2 h3{
+p {
+    margin: 0;
+}
+
+h1, h2, h3, h4{
     margin:0;
 }
 
-p { margin:0;
-    display: inline-block;
 
+
+.nav-group p { margin:0;
+    display: inline-block;
 }
 
 
@@ -153,10 +158,6 @@ input[type="submit"] {
     margin-top:5px;
 }
 
-.nav-interest p {
-    margin:0;
-}
-
 .nav-group{
     flex-wrap: wrap;
     display:flex;
@@ -238,7 +239,7 @@ input[type="submit"] {
 
 .card-txt {
     display: flex;
-    Padding :0px 15px 0px 15px;
+    Padding :0px 15px 10px 15px;
     Gap: 8px;
     flex-direction: column;
 }
@@ -262,7 +263,9 @@ input[type="submit"] {
     margin-top: 20px;    
 }
 
-
+.card-subtitle {
+    margin:0;
+}
 
 
 .hebergements-cards img {
@@ -306,9 +309,7 @@ a {
     color: var(--main-bg-color)
 }
 
-h4 {
-    margin:0;
-}
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -348,11 +349,6 @@ h4 {
     margin-top: 10px;
     margin-bottom: 4px;
 }
-
-.populaires-cards .card-subtitle {
-    margin: 0;
-}
-
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
@@ -362,7 +358,7 @@ h4 {
 .activity {
     box-sizing: border-box;
     padding: 30px;
-    float: none;
+    width: 100%;
 }
 
 .activity .card-title {
@@ -373,15 +369,14 @@ h4 {
 .activity-cards {
     display: flex;
     width: 100%;
-    gap:30px;
-    
+    gap:30px;    
 }
 
 .a-card {
     background-color: white;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    width: 25%;
+    width: 100%;
 }
 
 .a-card img {
@@ -397,16 +392,16 @@ footer {
     background-color: var(--main-bg-color);
 }
 
-.test {
+.footer-list {
     display:flex;
-    flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    gap:15px;
+    gap:30px;
 }
 
-.test ul {
-    flex-grow: 1;
+.footer-list ul {
+    display: flex;
+    flex-direction: column;
     padding: 20px;
     margin: 0;
     gap:15px;
@@ -543,16 +538,20 @@ footer {
     }
     .populaires-cards {
         flex-direction: column;
-    
     }
     .populaires-cards a {
         width: 100%;
     }
+
     .activity-cards {
         width: 100%;
+        flex-direction: column;
     }
     .activity-cards img {
         height: 141px;
     }
 
+    .footer-list {
+        flex-direction: column;
+    }
 }
