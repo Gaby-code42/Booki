@@ -405,6 +405,7 @@ footer {
     padding: 20px;
     margin: 0;
     gap:15px;
+    list-style: none;
 }
 
 
