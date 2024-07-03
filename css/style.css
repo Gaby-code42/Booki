@@ -74,7 +74,7 @@ header .logo img{
     margin-left: 64px;
         }
 
-.header-title:hover {
+.header-title:hover, .header-title:first-child{
     color :#0065FC;
 }
 
@@ -88,7 +88,7 @@ header .logo img{
     border-top: 2px solid transparent;
     }
 
-    .header-title:hover:before {
+    .header-title:hover:before, .header-title:first-child::before {
     border-color:#0065FC;
 }
 /* à voir si c'est juste*/
@@ -443,7 +443,7 @@ footer {
         width: 100%;
     }
     .hebergements-cards a {
-        width: 30.1% ;
+        width:calc(33% - 20px);
     }
 
     .populaires {
@@ -519,7 +519,7 @@ footer {
         padding: 0;
     }
     .nav-filter {
-        width: 35%; 
+        width: calc(50% - 50px);
         margin-top: 10px;
         font-size: 14px;
     }
