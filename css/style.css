@@ -73,7 +73,9 @@ header .logo img{
     list-style: none;
     font-size: 16px;
     margin-left: 64px;
-        }
+    top: 5px;
+
+    }
 
 .header-title:hover, .header-title:first-child{
     color :#0065FC;
@@ -82,7 +84,7 @@ header .logo img{
 .header-title::before{
     content:'';
     position:absolute;
-    top: -8px; 
+    top: -13px; 
     left: 0;
     right: 0;
     height: 0px;
@@ -560,12 +562,13 @@ footer {
         display: none;    
     }
 
+    .hebergements-cards a {
+        width: 100%;
+    }
+
     .hebergements{
         order:2;
         background-color: white;
-    }
-    .hebergements-cards a {
-        width: 100%;
     }
 
     .populaires {
