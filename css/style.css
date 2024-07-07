@@ -252,7 +252,7 @@ input[type="submit"] {
 
 .card-txt {
     display: flex;
-    Padding :0px 15px 10px 15px;
+    Padding :10px 5px 5px 15px;;
     Gap: 8px;
     flex-direction: column;
 }
@@ -409,13 +409,11 @@ footer {
 
 .footer-list {
     display:flex;
-    justify-content: space-between;
     width: 100%;
-    gap:30px;
+    gap: 0;
 }
 
 .footer-list ul {
-    display: flex;
     flex-direction: column;
     padding: 20px;
     margin: 0;
