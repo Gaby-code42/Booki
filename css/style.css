@@ -17,7 +17,7 @@ p {
     margin: 0;
 }
 
-h1, h2, h3, h4{
+h1, h2, h3 {
     margin:0;
     font-size: 22px;
 }
@@ -544,8 +544,6 @@ footer {
         margin-top: 10px;
         font-size: 16px;
     }
-
-
 
     .search-bar {
         border-top: 1px solid #F2F2F2;
