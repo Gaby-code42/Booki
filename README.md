@@ -1,8 +1,8 @@
 # Booki
 
 Page d'accueil d'une agence de réservation d'hébergements, intégrée en HTML et
-CSS à partir d'une maquette Figma. C'est un projet de la formation Intégrateur
-web d'OpenClassrooms.
+CSS à partir d'une maquette Figma. C'est un projet de la formation Développeur
+Web d'OpenClassrooms.
 
 ## Ce qui a été réalisé
 
